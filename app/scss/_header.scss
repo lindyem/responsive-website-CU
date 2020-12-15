@@ -1,5 +1,7 @@
 .header {
-  
+  font-family: 'Roboto', sans-serif;
+  font-size: $fontMedium ; 
+  font-weight: 500;
   //Hamburger Overlay Styles
 
   &.open {
@@ -26,14 +28,14 @@
     right: 0px;
     bottom: 0px;
     left: 0px;
-    background-image: linear-gradient($darkBlue, transparent);
+   // background-image: linear-gradient($darkBlue, transparent);
 
 
   }
 
   nav {
     position: relative;
-    background-color: $white;
+    background-color: $background;
     padding-top: 1.065rem;
     padding-bottom: 1.065rem;
   }
@@ -64,7 +66,7 @@
     width: calc(100% - 3rem);
     left: 50%;
     transform: translateX(-50%);
-    background: $white;
+    background-image: linear-gradient($purple, transparent);
     margin-top: 1.5rem;
     padding: 1.625rem;
     border-radius: 5px;
@@ -83,7 +85,7 @@
     a {
       position: relative;
       font-size: $fontSmall !important;
-      color: $grayishBlue !important;
+      color: $darkBlue !important;
       transition: color 300ms ease-in-out;
 
       &:not(:last-child){

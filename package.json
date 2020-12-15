@@ -1,0 +1,35 @@
+{
+  "name": "responsive-website-CU",
+  "version": "1.0.0",
+  "description": "Responsive site with css and html",
+  "main": "index.js",
+  "scripts": {
+    "watch": "webpack --watch --mode=development",
+    "build": "webpack",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.0.0",
+    "breakpoint-sass": "^2.7.1",
+    "css-loader": "^2.0.0",
+    "cssnano": "^4.0.5",
+    "node-sass": "^4.9.0",
+    "mini-css-extract-plugin": "^0.5.0",
+    "postcss-loader": "^3.0.0",
+    "sass-loader": "^7.0.1",
+    "style-loader": "^0.23.1",
+    "webpack": "^4.6.0",
+    "webpack-cli": "^3.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lindyem/responsive-website-CU.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lindyem/responsive-website-CU/issues"
+  },
+  "homepage": "https://github.com/lindyem/responsive-website-CU#readme"
+}
