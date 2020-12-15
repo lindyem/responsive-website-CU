@@ -1,0 +1,128 @@
+@font-face {
+  font-family: Avenir;
+  src: url(/fonts/avenir_ff/AvenirLTStd-Book.otf);
+}
+
+.hero {
+ background-color: $background;
+
+  .container {
+    @include breakPointUp(large){
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  &__image {
+    display: block;
+    margin-left: 287px;
+    position: relative;
+    top: 97px;
+    // background-image: url('/images/heroImage.png');
+    // background-size: cover;
+    // background-repeat: no-repeat;
+    // background-position: center center;
+    // min-height: 17.5rem; 
+
+    // @include breakPointUp(medium){
+    //   min-height: 25rem;
+    //   background-position: center 70%;
+    // }
+
+    //   @include breakPointUp(large){
+    //   flex: 3;
+    //   order: 2;
+    //   height: 41rem;
+    //   background-image: none;
+    //   //background-position: left center;
+    // }
+
+    // &::before {
+
+    //   @include breakPointUp(large){
+    //     content: "";
+    //     position: absolute;
+    //     height: 100%;
+    //     background-image: url('/images/heroImage.png');
+    //     background-repeat: no-repeat;
+    //     //background-position: center bottom;
+    //     width: 150%;
+    //     background-size: 122%;
+    //     background-position: 0% 83%;
+    //   }
+    // }
+
+    // &::after {
+    //   content: "";
+    //   position: absolute;
+    //   height: 100%;
+    //   width: 100%;
+    //   background-image:url('/images/heroImage.png');
+    //   background-size: 93%;
+    //   background-repeat: no-repeat;
+    //   background-position: center bottom;
+
+    //   @include breakPointUp(medium) {
+    //     background-size: 52%;
+    //   }
+
+    //   @include breakPointUp(large) {
+    //     width: 120%;
+    //     height: 122%;
+    //     background-size: 94%;
+    //     background-position: center 150%;
+    //     left: 22%;
+    //   }
+    // }
+  }
+
+  &__cta{
+    background-color: $purple;
+    color:$white;
+    font-family: 'Roboto', sans-serif;
+    font-size: $fontLarge;
+  }
+  &__text {
+    text-align: left;
+    z-index: 2;
+    position: relative;
+    top: -467px;
+    z-index: 1;
+
+    // @include breakPointUp(large){
+    //   flex: 2;
+    //   order: 1;
+    //   text-align: left;
+
+    h1 {
+      color: $darkBlue;
+      margin-bottom: 1.5rem;
+      font-family: Helvetica;
+      font-style: normal;
+      font-weight: bold;
+      font-size: $fontXxlg;
+      line-height: 110%;
+      width: 36rem;
+  
+
+      display: flex;
+      align-items: center;
+
+      // @include breakPointUp(large){
+      //   font-size: $fontXlg;
+      // }
+    }
+
+    p {
+      margin-bottom: 2.25rem;
+      color: $deepGray;
+      width: 18rem;
+      font-family: 'Avenir', sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: $fontLarge;
+      line-height: 160%;
+    }
+
+  }
+}
