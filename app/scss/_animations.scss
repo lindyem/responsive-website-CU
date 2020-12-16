@@ -1,44 +1,44 @@
-.has-fade{
+.has-fade {
   visibility: hidden;
 }
 
 
-@keyframes fade-in{
+@keyframes fade-in {
   from {
     visibility: hidden;
     opacity: 0;
   }
-  1%{
+  1%  {
     visibility: visible;
     opacity: 0;
   }
 
-  to{
+  to {
     visibility: visible;
     opacity: 1;
   }
 }
-.fade-in{
+.fade-in {
   animation: fade-in 200ms ease-in-out forwards;
 }
 
 
-@keyframes fade-out{
+@keyframes fade-out {
   from {
     visibility: visible;
     opacity: 1;
   }
-  99%{
+  99% {
     visibility: visible;
     opacity: 0;
   }
 
-  to{
+  to {
     visibility: hidden;
     opacity: 0;
   }
     }
-  .fade-out{
+  .fade-out {
     animation: fade-out 200ms ease-in-out forwards;
   }
   

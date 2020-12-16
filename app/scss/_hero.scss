@@ -1,13 +1,14 @@
 .hero {
- margin-top: 3rem;
+  margin-top: 3rem;
 
   &__image {
     display: block;
-    margin-left: 287px;
+    margin: auto;
     position: relative;
     top: 97px;
     width: 885px;
     height: 468px;
+    left: 210px;
 
     @include breakPointDown(large){
       position: static;
@@ -33,10 +34,8 @@
 
   &__text {
     text-align: left;
-    z-index: 2;
     position: relative;
     top: -467px;
-    z-index: 1;
 
     @include breakPointDown(large){
       position: static;
