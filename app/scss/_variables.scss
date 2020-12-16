@@ -3,7 +3,8 @@ $background: #E5E5E5;
 $darkBlue: #212353;
 $deepGray: #4B5D68;
 $purple: #9C69E2;
-// $lightPink: rgba(240, 99, 184, 0.15);
+$lightPink: rgba(240, 99, 184, 0.15);
+$white: hsl(0, 0%, 100%);
 // $lightBlue: #2D9CDB;
 // $lightGreen: #68C9BA;
 
@@ -13,13 +14,12 @@ $limeGreen: hsl(136, 65%, 51%);
 $brightCyan: hsl(192, 70%, 51%);
 $grayishBlue:hsl(233, 8%, 62%);
 $lightGrayishBlue: hsl(220, 16%, 96%);
-$veryLightGray:hsl(0, 0%, 98%);
-$white: hsl(0, 0%, 100%);
+
 
 
 //Font Sizes
-$fontSmall: 0.875rem; //14
-$fontMedium: 1rem; //16
-$fontLarge: 1.125rem; //18
-$fontXlg: 3.25rem; // 52
-$fontXxlg: 5rem// 80
+$fontRoot: 1rem; //16
+$fontMedium: 1.125rem; //18
+$fontLarge: 1.5rem; //24px
+$fontXlg: 2.5rem; //40
+$fontXxlg: 5rem;// 80

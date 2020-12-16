@@ -1,10 +1,4 @@
-@font-face {
-  font-family: Avenir;
-  src: url(/fonts/avenir_ff/AvenirLTStd-Book.otf);
-}
-
 .hero {
- background-color: $background;
  margin-top: 3rem;
 
   &__image {
@@ -12,6 +6,8 @@
     margin-left: 287px;
     position: relative;
     top: 97px;
+    width: 885px;
+    height: 468px;
 
     @include breakPointDown(large){
       position: static;
@@ -23,12 +19,18 @@
     }
   }
 
-  &__cta{
-    background-color: $purple;
-    color:$white;
-    font-family: 'Roboto', sans-serif;
-    font-size: $fontLarge;
+  &__cta {
+    @include breakPointDown(medium){
+      display: flex;
+      justify-content: center;
+    }
+    
+    & .button {
+      background-color: $purple;
+      color:$white;
+    }
   }
+
   &__text {
     text-align: left;
     z-index: 2;
@@ -41,44 +43,28 @@
     }
 
     h1 {
-      color: $darkBlue;
       margin-bottom: 1.5rem;
-      font-family: Helvetica;
-      font-style: normal;
-      font-weight: bold;
-      font-size: $fontXxlg;
-      line-height: 110%;
       width: 36rem;
 
       @include breakPointDown(large){
         margin-top: 1rem;
         width: 100%;
-        font-size: $fontXlg;
       }
 
       @include breakPointDown(small){
-        font-size: $fontLarge;
         text-align: center;
       }
     }
 
     p {
-      margin-bottom: 2.25rem;
-      color: $deepGray;
       width: 18rem;
-      font-family: 'Avenir', sans-serif;
-      font-style: normal;
-      font-weight: 500;
-      font-size: $fontLarge;
-      line-height: 160%;
+      margin-bottom: 2.25rem;  
 
       @include breakPointDown(large){
-        font-size: $fontMedium;
         width: 100%
       }
   
       @include breakPointDown(small){
-        font-size: $fontMedium;
         text-align: center;
       }
     }

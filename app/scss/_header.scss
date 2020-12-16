@@ -1,6 +1,5 @@
 .header {
   font-family: 'Roboto', sans-serif;
-  font-size: $fontMedium ; 
   font-weight: 500;
   //Hamburger Overlay Styles
 
@@ -84,7 +83,6 @@
 
     a {
       position: relative;
-      font-size: $fontSmall !important;
       color: $darkBlue !important;
       transition: color 300ms ease-in-out;
 

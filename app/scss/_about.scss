@@ -1,0 +1,31 @@
+.about{
+  background-color: $lightPink;
+  border-radius: 50px;
+  width: 100%;
+  margin-top: -13rem;
+
+  @include breakPointDown(large){
+    margin-top: 5rem;
+  }
+
+  @include breakPointDown(medium){
+    flex-flow: column-reverse;
+  }
+
+  img{
+    height: auto;
+    width: 477px;
+
+    @include breakPointDown(large){
+      width: 350px;
+    }
+  }
+
+  &__text{
+    padding: 125px 93px 125px 20px;
+
+    @include breakPointDown(medium){
+      padding: 75px 20px 30px 20px;
+    }
+  }
+}
