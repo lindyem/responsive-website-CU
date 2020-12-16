@@ -8,8 +8,8 @@ html {
 }
 
 body {
-  margin-right: 1rem;
-  margin-left: 1rem;
+  margin-right: 15rem;
+  margin-left: 15rem;
   padding: 0;
   font-family: Avenir;
   font-size: $fontMedium ; 
@@ -18,21 +18,25 @@ body {
   color: $grayishBlue;
   background-color: $background;
 
-  @include breakPointUp(medium){
+  @include breakPointDown(large){
+    margin-right: 10rem;
+    margin-left: 10rem;
+  }
+
+  @include breakPointDown(medium){
     margin-right: 5rem;
     margin-left: 5rem;
   }
 
-  @include breakPointUp(large){
-    font-size: $fontMedium;
-    margin-right: 15rem;
-    margin-left: 15rem;
+  @include breakPointDown(small){
+    margin-right: 1rem;
+    margin-left: 1rem;
   }
 
   &.noscroll {
     overflow: hidden;
     }
-  }
+  
 
   h1, h2, h3 {
     margin-top: 0px;
@@ -42,7 +46,7 @@ body {
     text-decoration: none;
   
   }
-
+}
 // Spacing
 .container{
   max-width: 69.375rem;

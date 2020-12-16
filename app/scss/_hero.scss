@@ -5,75 +5,22 @@
 
 .hero {
  background-color: $background;
-
-  .container {
-    @include breakPointUp(large){
-      display: flex;
-      align-items: center;
-    }
-  }
+ margin-top: 3rem;
 
   &__image {
     display: block;
     margin-left: 287px;
     position: relative;
     top: 97px;
-    // background-image: url('/images/heroImage.png');
-    // background-size: cover;
-    // background-repeat: no-repeat;
-    // background-position: center center;
-    // min-height: 17.5rem; 
 
-    // @include breakPointUp(medium){
-    //   min-height: 25rem;
-    //   background-position: center 70%;
-    // }
-
-    //   @include breakPointUp(large){
-    //   flex: 3;
-    //   order: 2;
-    //   height: 41rem;
-    //   background-image: none;
-    //   //background-position: left center;
-    // }
-
-    // &::before {
-
-    //   @include breakPointUp(large){
-    //     content: "";
-    //     position: absolute;
-    //     height: 100%;
-    //     background-image: url('/images/heroImage.png');
-    //     background-repeat: no-repeat;
-    //     //background-position: center bottom;
-    //     width: 150%;
-    //     background-size: 122%;
-    //     background-position: 0% 83%;
-    //   }
-    // }
-
-    // &::after {
-    //   content: "";
-    //   position: absolute;
-    //   height: 100%;
-    //   width: 100%;
-    //   background-image:url('/images/heroImage.png');
-    //   background-size: 93%;
-    //   background-repeat: no-repeat;
-    //   background-position: center bottom;
-
-    //   @include breakPointUp(medium) {
-    //     background-size: 52%;
-    //   }
-
-    //   @include breakPointUp(large) {
-    //     width: 120%;
-    //     height: 122%;
-    //     background-size: 94%;
-    //     background-position: center 150%;
-    //     left: 22%;
-    //   }
-    // }
+    @include breakPointDown(large){
+      position: static;
+      margin: 0 auto;
+      margin-top: 3rem;
+      width: 100%;
+      height: auto;
+      max-width: 885px;
+    }
   }
 
   &__cta{
@@ -89,10 +36,9 @@
     top: -467px;
     z-index: 1;
 
-    // @include breakPointUp(large){
-    //   flex: 2;
-    //   order: 1;
-    //   text-align: left;
+    @include breakPointDown(large){
+      position: static;
+    }
 
     h1 {
       color: $darkBlue;
@@ -103,14 +49,17 @@
       font-size: $fontXxlg;
       line-height: 110%;
       width: 36rem;
-  
 
-      display: flex;
-      align-items: center;
+      @include breakPointDown(large){
+        margin-top: 1rem;
+        width: 100%;
+        font-size: $fontXlg;
+      }
 
-      // @include breakPointUp(large){
-      //   font-size: $fontXlg;
-      // }
+      @include breakPointDown(small){
+        font-size: $fontLarge;
+        text-align: center;
+      }
     }
 
     p {
@@ -122,7 +71,16 @@
       font-weight: 500;
       font-size: $fontLarge;
       line-height: 160%;
-    }
 
+      @include breakPointDown(large){
+        font-size: $fontMedium;
+        width: 100%
+      }
+  
+      @include breakPointDown(small){
+        font-size: $fontMedium;
+        text-align: center;
+      }
+    }
   }
 }
