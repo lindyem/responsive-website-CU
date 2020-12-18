@@ -75,7 +75,8 @@
       height: 10px;
       width: 10px;
       border-radius: 50%;
-      border: solid 2px #2980b9;
+      border: solid 2px $white;
+      background: $white;
       font-size: 0;
 
       &:hover {
@@ -83,6 +84,8 @@
       }
     }
   }
+
+
   
   input {
     display: none;
@@ -105,7 +108,8 @@
   #radio-2:checked ~ &__slidesNavigation label#dotForRadio-2,
   #radio-3:checked ~ &__slidesNavigation label#dotForRadio-3,
   #radio-4:checked ~ &__slidesNavigation label#dotForRadio-4 {
-    background: #2980b9;
+    background: $pink;
+    border: $pink;
   }
 
   #radio-1:checked ~ &__cardContainer &__cards &__cardOne {
