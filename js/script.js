@@ -56,19 +56,19 @@ rightArrow.addEventListener('click', function() {
 
 function updateArrows() {
   if(cardIndex === 0) {
-    leftArrow.src = './images/arrowleft.png';
+    leftArrow.src = './images/arrowLeft.png';
     leftArrow.style.transform = 'scaleX(1)';
-    rightArrow.src = './images/arrowright.png';
+    rightArrow.src = './images/arrowRight.png';
     rightArrow.style.transform = 'scaleX(1)';
   } else if(cardIndex > 0 && cardIndex < 3) {
-    leftArrow.src = './images/arrowleft.png';
+    leftArrow.src = './images/arrowLeft.png';
     leftArrow.style.transform = 'scaleX(1)';
-    rightArrow.src = './images/arrowleft.png';
+    rightArrow.src = './images/arrowLeft.png';
     rightArrow.style.transform = 'scaleX(-1)';
   } else if(cardIndex === 3) {
-    leftArrow.src = './images/arrowright.png';
+    leftArrow.src = './images/arrowRight.png';
     leftArrow.style.transform = 'scaleX(-1)';
-    rightArrow.src = './images/arrowleft.png';
+    rightArrow.src = './images/arrowLeft.png';
     rightArrow.style.transform = 'scaleX(-1)';
   }
 }
