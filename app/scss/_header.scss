@@ -79,10 +79,16 @@
 
   &__links {
 
+    & :first-child {
+      font-weight: 800;
+    }
+
     a {
       position: relative;
       color: $darkBlue !important;
       transition: color 300ms ease-in-out;
+
+      
 
       &:not(:last-child){
       margin-right: 32px;
