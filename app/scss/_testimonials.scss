@@ -1,6 +1,8 @@
 .testimonials {
   background: $purple;
   border-radius: 50px;
+
+
   
   h2 {
     color: $white;
@@ -85,7 +87,16 @@
     }
   }
 
+  &__arrowsNavigation {
+    float: right;
+    position: relative;
+    top: -76px;
+    left: -85px;
 
+    img {
+      cursor: pointer;
+    }
+  }
   
   input {
     display: none;
