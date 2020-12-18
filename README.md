@@ -1,2 +1,2 @@
 # responsive-website-CU
-Responsive site with css and html
+Responsive site with scss and html
