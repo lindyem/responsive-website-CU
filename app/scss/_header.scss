@@ -27,7 +27,7 @@
     right: 0px;
     bottom: 0px;
     left: 0px;
-   // background-image: linear-gradient($darkBlue, transparent);
+   
 
 
   }
@@ -38,10 +38,6 @@
     padding-top: 1.065rem;
     padding-bottom: 1.065rem;
   }
-
-  // &__logo {
-
-  // }
 
 
   &__menu { //mobile  menu
@@ -65,10 +61,12 @@
     width: calc(100% - 3rem);
     left: 50%;
     transform: translateX(-50%);
-    background-image: linear-gradient($purple, transparent);
     margin-top: 1.5rem;
     padding: 1.625rem;
     border-radius: 5px;
+    background-color: rgba(156,105,226,0.5);
+    z-index: 99;
+
 
 
     a{

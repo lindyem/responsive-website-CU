@@ -1,9 +1,9 @@
 .testimonials {
   background: $purple;
   border-radius: 50px;
+  margin-top: -140px;
+  margin-bottom: 90px;
 
-
-  
   h2 {
     color: $white;
     padding: 5rem;
@@ -34,9 +34,22 @@
     padding: 3rem;
     margin-right: 3rem;
     background: linear-gradient(270deg, #9C69E2 9.75%, rgba(255, 255, 255, 1) 100%);
+
     img {
       height: 90px;
       width: 90px;
+    }
+
+    @include breakPointDown(medium){
+      flex-flow: column;
+
+      img {
+        margin-bottom: 1rem;
+      }
+    }
+
+    @include breakPointDown(medium){
+      padding: 1rem;
     }
   }
 
@@ -60,6 +73,10 @@
     position: relative;
     overflow: hidden;
     padding: 5rem;
+
+    @include breakPointDown(medium){
+      padding: 1rem;
+    }
   }
 
   &__slidesNavigation {
@@ -85,6 +102,10 @@
         cursor: pointer;
       }
     }
+
+    @include breakPointDown(medium){
+      top: -30px;
+    }
   }
 
   &__arrowsNavigation {
@@ -95,6 +116,11 @@
 
     img {
       cursor: pointer;
+    }
+
+    @include breakPointDown(medium){
+      top: -30px;
+      left: -70px;
     }
   }
   
